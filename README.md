@@ -8,13 +8,13 @@ Tested and working on Linux, OSX, and Cygwin.
 
 ### Installation
 
-Requirements: `tmux` version 1.9 (or higher), `git`, `bash`.
+Requirements: `tmux` version 1.9 (or higher), `git`, and `bash`.
 
 Clone TPM:
 
     $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-Put this at the bottom of `.tmux.conf`:
+Put this at the bottom of `~/.tmux.conf`:
 
     # List of plugins
     set -g @plugin 'tmux-plugins/tpm'
@@ -25,7 +25,7 @@ Put this at the bottom of `.tmux.conf`:
     # set -g @plugin 'git@github.com/user/plugin'
     # set -g @plugin 'git@bitbucket.com/user/plugin'
 
-    # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+    # Initialize TMUX plugin manager (keep this line at the very bottom of ~/.tmux.conf)
     run '~/.tmux/plugins/tpm/tpm'
 
 Reload TMUX environment so TPM is sourced:
@@ -48,7 +48,7 @@ You're good to go! The plugin was cloned to `~/.tmux/plugins/` dir and sourced.
 ### Uninstalling plugins
 
 1. Remove (or comment out) plugin from the list.
-2. Press `prefix + alt + u` (lowercase u as in **u**ninstall) to remove the plugin.
+2. Press `prefix + Alt + u` (lowercase u as in **u**ninstall) to remove the plugin.
 
 All the plugins are installed to `~/.tmux/plugins/` so alternatively you can
 find plugin directory there and remove it.
@@ -62,7 +62,7 @@ find plugin directory there and remove it.
 `prefix + U`
 - updates plugin(s)
 
-`prefix + alt + u`
+`prefix + Alt + u`
 - remove/uninstall plugins not on the plugin list
 
 ### More plugins
